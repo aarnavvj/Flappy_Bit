@@ -2,6 +2,7 @@ input.onButtonPressed(Button.A, function () {
     Bird.change(LedSpriteProperty.Y, -1)
 })
 input.onButtonPressed(Button.B, function () {
+    // This game was based on the old classic game " Flappy Bird. "
     Bird.change(LedSpriteProperty.Y, 1)
 })
 let Ticks = 0
