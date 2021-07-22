@@ -8,7 +8,7 @@ input.onButtonPressed(Button.B, function () {
 let Empty_Obstacle_Y = 0
 let Ticks = 0
 let Bird: game.LedSprite = null
-game.setLife(3)
+game.setLife(5)
 let Index = 0
 let Obstacles: game.LedSprite[] = []
 Bird = game.createSprite(0, 2)
