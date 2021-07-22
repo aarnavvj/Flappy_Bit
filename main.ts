@@ -1,13 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     Bird.change(LedSpriteProperty.Y, -1)
 })
-input.onButtonPressed(Button.AB, function () {
-    game.setLife(3)
-    Index = 0
-    Obstacles = []
-    Bird = game.createSprite(0, 2)
-    Bird.set(LedSpriteProperty.Blink, 300)
-})
 input.onButtonPressed(Button.B, function () {
     // This game was based on the old classic game " Flappy Bird. "
     Bird.change(LedSpriteProperty.Y, 1)
@@ -15,11 +8,9 @@ input.onButtonPressed(Button.B, function () {
 let Empty_Obstacle_Y = 0
 let Ticks = 0
 let Bird: game.LedSprite = null
-let Obstacles: game.LedSprite[] = []
-let Index = 0
 game.setLife(3)
-Index = 0
-Obstacles = []
+let Index = 0
+let Obstacles: game.LedSprite[] = []
 Bird = game.createSprite(0, 2)
 Bird.set(LedSpriteProperty.Blink, 300)
 basic.forever(function () {
